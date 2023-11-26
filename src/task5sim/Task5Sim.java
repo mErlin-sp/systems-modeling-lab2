@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Task5Sim {
     public static void main(String[] args) {
-        System.out.println("Task5. Multiple devices");
+        System.out.println("Task 5. Multiple devices");
         Task5Create c = new Task5Create(2.0);
         Task5Process p = new Task5Process(1.0, 10);
         System.out.println("id0 = " + c.getId() + " id1=" +

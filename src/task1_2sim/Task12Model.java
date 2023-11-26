@@ -1,8 +1,8 @@
-package task1sim;
+package task1_2sim;
 
 import sim.FunRand;
 
-public class Task1Model {
+public class Task12Model {
     private double tnext;
     private double tcurr;
     private double t0, t1;
@@ -14,7 +14,7 @@ public class Task1Model {
     private double totalDeviceLoad;
 
 
-    public Task1Model(double delay0, double delay1, int maxQ) {
+    public Task12Model(double delay0, double delay1, int maxQ) {
         delayCreate = delay0;
         delayProcess = delay1;
         tnext = 0.0;
@@ -34,8 +34,8 @@ public class Task1Model {
                 nextEvent = 1;
 
             }
-            double dt=tnext-tcurr;
-            totalDeviceLoad+=(state*dt);
+            double dt = tnext - tcurr;
+            totalDeviceLoad += (state * dt);
             tcurr = tnext;
             switch (nextEvent) {
                 case 0:
